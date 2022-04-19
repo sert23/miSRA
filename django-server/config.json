@@ -1,0 +1,7 @@
+{
+"outbase":"/shared/home/pymiSRA/upload",
+"javaBasePath":"/shared/home/pymiSRA/java",
+"javaBasePath2020":"/shared/home/pymiSRA/java2020",
+"dbPath":"/shared/home/miRexpress_store",
+"profiler":"java -classpath /shared/home/pymiSRA/java2020:/shared/home/pymiSRA/java2020/mariadb-java-client-1.1.7.jar miRepo/Profiler"
+}
