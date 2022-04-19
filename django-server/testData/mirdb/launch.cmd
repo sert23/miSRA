@@ -1,0 +1,1 @@
+java -classpath /shared/home/pymiSRA/java2020/commons-compress-1.18.jar:/shared/home/pymiSRA/java2020/mariadb-java-client-1.1.7.jar:/shared/home/pymiSRA/java2020 matrix.Matrix  /shared/home/pymiSRA/testData/mirdb/blood.conf

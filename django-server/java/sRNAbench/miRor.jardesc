@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/opt/sRNAtoolboxDB/exec/MiRor.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/sRNAtoolbox/src/sRNAbench/miRor.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{MiRror.java[MiRror" manifestLocation="/sRNAtoolbox/src/sRNAbench/miRor.mf" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Exec.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{MiRror.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{IO.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GVars.java"/>
+        <javaElement handleIdentifier="=libs/src&lt;util{Path.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Read.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Write.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{Vars.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Util.java"/>
+    </selectedElements>
+</jardesc>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/opt/sRNAtoolboxDB/exec/sRNAbench.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/sRNAtoolbox/src/sRNAbench/sRNAbench.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{SRNAbench.java[SRNAbench" manifestLocation="/sRNAtoolbox/src/sRNAbench/sRNAbench.mf" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{graphics.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{IO.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Zip.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{NovelData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Plot.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sequences"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{AlignUtilParallel.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Bowtie.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAdb{SRAannotations.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BedGraph.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GtfProcesser.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GeneNameMapper.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Preproc.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{MicroRNA.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Cross.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GtfData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{AlignUtil.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BedDataRegion.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{RNAfoldData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BedDatai.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Config.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{AnnotData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{RNAfold.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;rnaSeqSimple"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{ClusterData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Align.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAgFreeGit{GFcluster.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{CrossDataBedDataAnnot.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Read.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Path.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{SortText.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{TrimmAdapter.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Util.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{ReadData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BedData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{CrossData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{AlignData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GVars.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Stat.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAgFreeLibs{RNAcofoldData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Write.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BasicStat.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BowtieData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Novel.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Sort.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{Profile.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Trna.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{GenomeDistribution.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Guess.java"/>
+        <file path="/sRNAtoolbox/src/sRNAbench/sRNAbench.mf"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAdb{CheckProtocol.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{CrossDataBedData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Converter.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Random.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAdb{GetProtocol.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{DataContainer.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{MapData.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{SRNAbench.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{Vars.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{BedDataAnnot.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;sRNAbench{Results.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{RNAfeatures.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Classification.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{IsoMiR.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Exec.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Homologs.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Taxonomy.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{Cluster.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAgFreeLibs{Cluster.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{IsoMiRdata.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;miRNAgFreeGit{GFclusterMM.java"/>
+        <javaElement handleIdentifier="=sRNAtoolbox/src&lt;libs{RNAfeaturesData.java"/>
+    </selectedElements>
+</jardesc>
