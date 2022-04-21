@@ -1,5 +1,5 @@
 {
-"outbase":"/shared/home/pymiSRA/upload",
+"outbase":"/shared/miSRA/upload/",
 "javaBasePath":"/shared/home/pymiSRA/java",
 "javaBasePath2020":"/shared/home/pymiSRA/java2020",
 "dbPath":"/shared/home/miRexpress_store",

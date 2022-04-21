@@ -55,8 +55,9 @@ def index(request):
         ### prepare the temporary files
         outbase = data["outbase"]
         # rand = "id"+str(int(1000000*random.random()))
-        rand = "id" + generate_uniq_id()
-        userOutBase = outbase +"/"+ rand
+        random_id = "id" + generate_uniq_id()
+        userOutBase = os.path.join(outbase, random_id)
+        # userOutBase = outbase +"/"+ rand
         os.mkdir(userOutBase)
         clientID = get_client_ip(request)
         ## write the temorary files into the temp folder
