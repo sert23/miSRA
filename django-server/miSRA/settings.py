@@ -124,4 +124,5 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BACKEND_CONFIG = json.load("/shared/home/pymiSRA/config.json")
+
+BACKEND_CONFIG = json.load(open("/shared/home/pymiSRA/config.json"))
