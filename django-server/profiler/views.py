@@ -8,7 +8,8 @@ import os
 import json
 import subprocess
 import shutil
-from django.conf.settings import BACKEND_CONFIG
+from miSRA.settings import BACKEND_CONFIG
+# from django.conf.settings import BACKEND_CONFIG
 import string
 # from django.shortcuts import render
 # from django.forms import UploadFileForm
