@@ -1,7 +1,7 @@
 
 # Create your views here.
 from genericpath import isfile
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponse, HttpResponseNotFound, JsonResponse
 from django.http import StreamingHttpResponse
 import random
 import os
@@ -78,7 +78,7 @@ def index(request):
         writeConfigFile(request.POST,localFiles,configFile,configString)
         
         status = subprocess.run(data['profiler']+" "+configFile, shell=True)
-       
+
 
         
         shutil.rmtree(userOutBase+"/bench")
@@ -98,6 +98,53 @@ def index(request):
                 response = HttpResponseNotFound('<h1>File does not exist</h1>')
 
         return response
+
+
+def launch(request):
+    # configFile = "/shared/home/pymiSRA/config.json"
+    data = BACKEND_CONFIG
+    # # # #
+    ### prepare the temporary files
+    outbase = data["outbase"]
+    # rand = "id"+str(int(1000000*random.random()))
+    random_id = "id" + generate_uniq_id()
+    userOutBase = os.path.join(outbase, random_id)
+    # userOutBase = outbase +"/"+ rand
+    os.mkdir(userOutBase)
+    clientID = get_client_ip(request)
+    ## write the temorary files into the temp folder
+    localFiles = {}
+    if request.FILES:
+        for k in request.FILES:
+            print ("go for " + k)
+            tmpFile = userOutBase + "/" + k + ".fa"
+            handle_uploaded_file(request.FILES[k], tmpFile)
+            localFiles[k] = tmpFile
+    else:
+        localFiles["test"] = data.get("test_fasta_file")
+
+    ## write the config file in sRNAbench style
+    configFile = userOutBase + "/config.txt"
+    configString = "output=" + userOutBase + " \n" + "javaBasePath=" + data["javaBasePath"] + "\njavaBasePath2020=" + \
+                   data['javaBasePath2020'] + "\ndbPath=" + data['dbPath']
+    print ("config " + configString)
+    writeConfigFile(request.POST, localFiles, configFile, configString)
+
+    command = data['profiler'] + " " + configFile
+    status = subprocess.Popen(command.split(" "),
+                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    print("launched")
+        # , shell=True)
+
+    shutil.rmtree(userOutBase + "/bench")
+    zipfile = userOutBase + ".zip"
+    shutil.make_archive(userOutBase, 'zip', userOutBase)
+
+    data = {}
+    data["launched"] = True
+
+    return JsonResponse(data)
+
 
 # def getJson(file):
 #    #check if json is valid
