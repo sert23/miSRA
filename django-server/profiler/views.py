@@ -127,7 +127,7 @@ def launch(request):
     configFile = userOutBase + "/config.txt"
     configString = "output=" + userOutBase + " \n" + "javaBasePath=" + data["javaBasePath"] + "\njavaBasePath2020=" + \
                    data['javaBasePath2020'] + "\ndbPath=" + data['dbPath']
-    print ("config " + configString)
+    print("config " + configString)
     writeConfigFile(request.POST, localFiles, configFile, configString)
 
     command = data['profiler'] + " " + configFile
@@ -136,15 +136,38 @@ def launch(request):
     print("launched")
         # , shell=True)
 
-    shutil.rmtree(userOutBase + "/bench")
-    zipfile = userOutBase + ".zip"
-    shutil.make_archive(userOutBase, 'zip', userOutBase)
+    # shutil.rmtree(userOutBase + "/bench")
+    # zipfile = userOutBase + ".zip"
+    # shutil.make_archive(userOutBase, 'zip', userOutBase)
 
     data = {}
     data["launched"] = True
+    data["job_id"] = random_id
 
     return JsonResponse(data)
 
+def check_status(request):
+    job_id = request.POST.get("job_id")
+    data = BACKEND_CONFIG
+    # # # #
+    ### prepare the temporary files
+    outbase = data["outbase"]
+    # rand = "id"+str(int(1000000*random.random()))
+    userOutBase = os.path.join(outbase, job_id)
+    results_file = os.path.join(userOutBase, "results.txt")
+    # userOutBase = outbase +"/"+ rand
+    if os.path.exists(results_file):
+        shutil.rmtree(userOutBase + "/bench")
+        zipfile = userOutBase + ".zip"
+        shutil.make_archive(userOutBase, 'zip', userOutBase)
+        with open(zipfile, 'rb') as f:
+            file_data = f.read()
+            # sending response
+            response = HttpResponse(file_data, content_type='application/zip')
+            response['Content-Disposition'] = 'attachment; filename=' + zipfile
+            return response
+    else:
+        return HttpResponseNotFound('job not finished')
 
 # def getJson(file):
 #    #check if json is valid
