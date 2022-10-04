@@ -148,6 +148,7 @@ def launch(request):
 
 def check_status(request):
     job_id = request.POST.get("job_id")
+    print("entered status check")
     data = BACKEND_CONFIG
     # # # #
     ### prepare the temporary files
