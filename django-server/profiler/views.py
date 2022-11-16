@@ -130,7 +130,7 @@ def launch(request):
     print("config " + configString)
     writeConfigFile(request.POST, localFiles, configFile, configString)
 
-    command = data['profiler'] + " " + configFile
+    command = data['profiler'] + " " + configFile + ";" + "/shared/miSRA/venv/miSRA/lib/python3 /shared/miSRA/backend_exec/postProcess.py"
     status = subprocess.Popen(command.split(" "),
                               stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     print("launched")
